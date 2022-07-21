@@ -16,10 +16,8 @@ jobs: # List of tasks
     name: Say say-bye
     runs-on: ubuntu-latest
     steps:
-      - uses: lgmorand/github-action-hello@v2
-        with:
-          firstname: gerard
-          firstname2: baste
+      - name: Separator
+        uses: phwes/simple_hello_world@v1
 
       - name: Say good night
         run: echo "Good night Vietnam"

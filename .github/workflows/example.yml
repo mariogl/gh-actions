@@ -17,7 +17,10 @@ jobs: # List of tasks
     runs-on: ubuntu-latest
     steps:
       - name: Separator
-        run: echo "======="
+        uses: lgmorand/github-action-hello@v2
+        with:
+          firstname: gerard
+          firstname2: baste
 
       - name: Say good night
         run: echo "Good night Vietnam"

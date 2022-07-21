@@ -1,0 +1,13 @@
+name: Workflow example # Name of the workflow
+on: push # Events that trigger the jobs
+
+jobs: # List of tasks
+  say-hi: # id of the job
+    name: Say hi # Name of the job
+    runs-on: ubuntu-latest # SO of the server
+    steps: # List of subtasks
+      - name: Clear console # Name of the subtask
+        run: clear # Command to execute
+
+      - name: Say good morning # Name of the subtask
+        run: echo "Good morning Vietnam" # Command to execute

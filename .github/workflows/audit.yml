@@ -1,4 +1,4 @@
-name: Testing GitHub actions
+name: Code audit
 
 on: push
 
